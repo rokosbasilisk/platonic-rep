@@ -36,11 +36,11 @@ We assess representational alignment using various metrics, such as mutual k-NN 
     \item \textbf{Out-of-distribution data}: ImageNet-O, designed with images that are outliers to the ImageNet distribution \cite{hendrycks2021nae}.
     \item \textbf{Random noise}: Purely random images to test the limits of PRH.
 \end{enumerate}
-The alignment between different models is measured using Spearman's rank correlation, focusing on how similar the models' distance measures are for given data points.
+The alignment between different models is measured using Spearman's rank correlation, focusing on how similar the models' distance measures are for given data points. Throughout the experiments, 17 different Vision transformers spanning different sizes and trained data are used. Mutual k-Nearest Neighbor Alignment is measured in all the three settings.
 
 \section{Results}
 
-\subsection{Vision-Vision Alignment on In-Distribution Data}
+\subsection{Alignment on In-Distribution Data}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{prh_correlation.jpg}
@@ -48,15 +48,15 @@ The alignment between different models is measured using Spearman's rank correla
     \label{fig:prh_correlation}
 \end{figure}
 
-\subsection{Vision-Vision Alignment on ImageNet-O}
+\subsection{Alignment on ImageNet-O}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{prh_correlation_ood.jpg}
-    \caption{Alignment of models on ImageNet-O dataset. The Spearman correlation suggests that even with outlier data, models maintain a shared statistical representation, albeit with higher prediction errors.}
+    \caption{Alignment of vision-models on ImageNet-O dataset. The Spearman correlation suggests that even with outlier data, models maintain a shared statistical representation, albeit with higher prediction errors.}
     \label{fig:prh_correlation_ood}
 \end{figure}
 
-\subsection{Vision-Vision Alignment on Random Data}
+\subsection{Alignment on Random Data}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{prh_correlation_random.jpg}
@@ -65,15 +65,15 @@ The alignment between different models is measured using Spearman's rank correla
 \end{figure}
 
 \section{Discussion}
-Our findings show that PRH extends beyond in-distribution data to OOD settings, where models exhibit alignment in their internal representations. On ImageNet-O, models align in their predictions even when they produce incorrect results with high confidence, revealing that models fail in a predictable manner on OOD data. This suggests that they rely on a shared interpretation of the input space, even when the data diverges from what they have seen during training.
+Our findings show that PRH extends beyond in-distribution data to OOD settings, where models exhibit alignment in their internal representations. On ImageNet-O, models align even in their predictions even when they produce incorrect results with high confidence, revealing that models fail in a predictable manner on OOD data. This suggests that they rely on a shared interpretation of the input space, even when the data diverges from what they have seen during training.
 
 However, this alignment does not extend to purely random data, where the lack of structure prevents models from developing a shared statistical understanding. This distinction emphasizes that the presence of meaningful underlying structure is a prerequisite for representational convergence, aligning with PRH's notion of a shared representation of reality.
-
+\clearpage
 \section{Conclusion}
 The results validate the Platonic Representation Hypothesis in OOD scenarios but highlight its limitations with random noise. Our analysis underscores the need for structured data in achieving representational alignment and suggests new directions for exploring the boundaries of PRH. Future work could focus on extending PRH to other modalities and finding conditions where the hypothesis might be challenged or refuted.
 
 \vfill
-The code used for the experiments and analysis in this paper is available on GitHub at \href{https://github.com/rokosbasilisk/prh-experiments}{https://github.com/rokosbasilisk/prh-experiments}.
+The code used for the experiments and analysis in this paper is available on GitHub \href{https://github.com/rokosbasilisk/prh-experiments}{here}.
 
 \clearpage
 \begin{thebibliography}{9}
@@ -83,6 +83,7 @@ Huh, M., Cheung, B., Wang, T., \& Isola, P. (2024). The Platonic Representation 
 
 \bibitem{hendrycks2021nae}
 Hendrycks, D., Zhao, K., Basart, S., Steinhardt, J., \& Song, D. (2021). Natural Adversarial Examples. \emph{CVPR}. \href{https://arxiv.org/abs/2405.07987}{arXiv:2405.07987}.
+
 
 \end{thebibliography}
 

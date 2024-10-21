@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.21)  21 OCT 2024 16:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.21)  21 OCT 2024 21:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -454,31 +454,18 @@ File: prh_correlation_random.jpg Graphic file (type jpg)
 <use prh_correlation_random.jpg>
 Package pdftex.def Info: prh_correlation_random.jpg  used on input line 62.
 (pdftex.def)             Requested size: 452.9679pt x 382.45122pt.
- [3 <./prh_correlation_ood.jpg>] [4 <./prh_correlation_random.jpg>]
-Overfull \hbox (96.27664pt too wide) in paragraph at lines 76--77
-[]\T1/cmr/m/n/10 The code used for the ex-per-i-ments and anal-y-sis in this pa
--per is avail-able on GitHub at []https://github.com/rokosbasilisk/prh-
- []
+ [3 <./prh_correlation_ood.jpg>] [4 <./prh_correlation_random.jpg>] [5
 
-[5] [6
+] [6
 
 ] (./paper.aux)
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `paper.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `paper.out':
-(rerunfilecheck)             Before: 307E0D947431A8EEA70378ACF32C663F;1335
-(rerunfilecheck)             After:  72C94A3F5FD20638D5F72617A5036854;1279.
+Package rerunfilecheck Info: File `paper.out' has not changed.
+(rerunfilecheck)             Checksum: 3E872AAC5D7F3E57BD72358C589148F0;1060.
  ) 
 Here is how much of TeX's memory you used:
  11496 strings out of 480247
  182141 string characters out of 5896150
- 471451 words of memory out of 5000000
+ 471679 words of memory out of 5000000
  29270 multiletter control sequences out of 15000+600000
  481834 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -494,10 +481,10 @@ xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/oppenheimer/.texlive
 2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/oppenheimer/.
 texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/oppenh
 eimer/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on paper.pdf (6 pages, 654554 bytes).
+Output written on paper.pdf (6 pages, 653988 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 118 compressed objects within 2 object streams
+ 403 PDF objects out of 1000 (max. 8388607)
+ 117 compressed objects within 2 object streams
  24 named destinations out of 1000 (max. 500000)
  80 words of extra memory for PDF output out of 10000 (max. 10000000)
 
