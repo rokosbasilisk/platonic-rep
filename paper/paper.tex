@@ -21,22 +21,30 @@ Independent Researcher\\
 \maketitle
 
 \begin{abstract}
-The Platonic Representation Hypothesis (PRH) \cite{huh2024prh} suggests that models trained with different objectives and on various modalities can converge to a shared statistical understanding of reality. This paper explores whether PRH holds when models are exposed to out-of-distribution (OOD) data. We analyze the alignment of model representations using ImageNet-O, a dataset designed with OOD images, and compare these results with those from the original experiment where the evaluation data is within the pretraining data distribution and also with purely random data. Our findings indicate that PRH holds in OOD settings but not for random data, highlighting the importance of underlying structure in data for shared model representations.
+The Platonic Representation Hypothesis (PRH) \cite{huh2024prh} posits that neural networks, despite being trained on different objectives and datasets, converge toward a shared statistical model of reality. This paper extends the investigation of PRH to out-of-distribution (OOD) settings, using ImageNet-O as a benchmark, and contrasts the findings with results from in-distribution data and random noise. Our analysis reveals that while PRH holds in OOD scenarios, it breaks down with purely random data, suggesting that a common underlying structure in the data is essential for representational alignment.
 \end{abstract}
 
 \section{Introduction}
-The PRH proposes that models converge toward a shared statistical representation of reality, regardless of training specifics such as dataset or training objectives. Previous evidence largely focused on available datasets which are in-distribution with respect to the training data of the models (e.g., Places365’s validation dataset). This hypothesis is extended here to include OOD scenarios using ImageNet-O and random noise data. The ImageNet-O dataset, as introduced in \cite{hendrycks2021nae}, contains images that lie outside the distribution of ImageNet, making it a valuable resource for testing generalization.
+The PRH suggests that models trained across various modalities and objectives converge toward a shared representation of reality \cite{huh2024prh}. Inspired by philosophical concepts like Plato’s Allegory of the Cave, PRH proposes that neural networks are progressively learning an idealized representation of the world. This convergence has been observed across domains such as vision and language models, with evidence showing that larger models better align their internal representations \cite{huh2024prh}. However, it remains unclear whether such convergence persists when models encounter data significantly different from their training distribution.
+
+To address this, we extend PRH's analysis to out-of-distribution (OOD) settings using the ImageNet-O dataset, which contains samples outside the distribution of ImageNet \cite{hendrycks2021nae}. We also include random noise as a contrasting dataset to examine the boundaries of representational alignment.
 
 \section{Methodology}
-To test PRH in OOD settings, we used various metrics for measuring model alignment, such as mutual k-NN and CKNN-A. The data was divided into three categories: (1) in-distribution data (ImageNet), (2) OOD data (ImageNet-O), and (3) random noise.
+We assess representational alignment using various metrics, such as mutual k-NN and CKNN-A, across three types of data:
+\begin{enumerate}
+    \item \textbf{In-distribution data}: Data that aligns with the pretraining dataset (e.g., Places365’s validation set).
+    \item \textbf{Out-of-distribution data}: ImageNet-O, designed with images that are outliers to the ImageNet distribution \cite{hendrycks2021nae}.
+    \item \textbf{Random noise}: Purely random images to test the limits of PRH.
+\end{enumerate}
+The alignment between different models is measured using Spearman's rank correlation, focusing on how similar the models' distance measures are for given data points.
 
 \section{Results}
 
-\subsection{Vision-Vision Alignment on Places365’s Validation Dataset}
+\subsection{Vision-Vision Alignment on In-Distribution Data}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{prh_correlation.jpg}
-    \caption{Vision-vision alignment measured with various metrics. Spearman's rank correlation among different metrics and batch sizes when used to measure alignment among 78 vision models.}
+    \caption{Vision-vision alignment measured on Places365’s validation dataset using various metrics. High Spearman's rank correlation among different metrics indicates alignment among vision models.}
     \label{fig:prh_correlation}
 \end{figure}
 
@@ -44,7 +52,7 @@ To test PRH in OOD settings, we used various metrics for measuring model alignme
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{prh_correlation_ood.jpg}
-    \caption{Spearman correlation of alignment scores across metrics and configurations on the ImageNet-O dataset.}
+    \caption{Alignment of models on ImageNet-O dataset. The Spearman correlation suggests that even with outlier data, models maintain a shared statistical representation, albeit with higher prediction errors.}
     \label{fig:prh_correlation_ood}
 \end{figure}
 
@@ -52,15 +60,17 @@ To test PRH in OOD settings, we used various metrics for measuring model alignme
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{prh_correlation_random.jpg}
-    \caption{Spearman correlation of alignment scores across metrics and configurations on randomly generated images.}
+    \caption{Spearman correlation of alignment scores on random noise data. The lower correlation values indicate a breakdown in representational alignment, suggesting that random data lacks the underlying structure needed for PRH.}
     \label{fig:prh_correlation_random}
 \end{figure}
 
 \section{Discussion}
-The results suggest that the Platonic Representation Hypothesis (PRH) holds true even in out-of-distribution (OOD) settings, as demonstrated with the ImageNet-O dataset. Despite being exposed to outlier data, the models maintain high alignment in their representations, indicating that they might develop a shared underlying structure in their perception of reality, even when the training data distribution shifts. However, this alignment breaks down when models are exposed to purely random noise, revealing the limits of the PRH. This distinction is intriguing: on randomly generated data, models do not converge on a shared statistical understanding of reality. Yet, on OOD data like ImageNet-O, the models exhibit strong correlation in their representations, even though their predictions are consistently incorrect but made with high confidence. This suggests that, while the models fail on outlier data, their failure is systematic and predictable.
+Our findings show that PRH extends beyond in-distribution data to OOD settings, where models exhibit alignment in their internal representations. On ImageNet-O, models align in their predictions even when they produce incorrect results with high confidence, revealing that models fail in a predictable manner on OOD data. This suggests that they rely on a shared interpretation of the input space, even when the data diverges from what they have seen during training.
+
+However, this alignment does not extend to purely random data, where the lack of structure prevents models from developing a shared statistical understanding. This distinction emphasizes that the presence of meaningful underlying structure is a prerequisite for representational convergence, aligning with PRH's notion of a shared representation of reality.
 
 \section{Conclusion}
-We have shown that PRH extends beyond in-distribution data, with models maintaining alignment even in OOD settings. However, the presence of underlying structure in data is crucial for such alignment. Future work should focus on developing better methods to test the generalizability of PRH, finding scenarios where the hypothesis might be falsified, and exploring cross-modality applications of PRH.
+The results validate the Platonic Representation Hypothesis in OOD scenarios but highlight its limitations with random noise. Our analysis underscores the need for structured data in achieving representational alignment and suggests new directions for exploring the boundaries of PRH. Future work could focus on extending PRH to other modalities and finding conditions where the hypothesis might be challenged or refuted.
 
 \vfill
 The code used for the experiments and analysis in this paper is available on GitHub at \href{https://github.com/rokosbasilisk/prh-experiments}{https://github.com/rokosbasilisk/prh-experiments}.

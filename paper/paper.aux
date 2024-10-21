@@ -17,20 +17,23 @@
 \providecommand\HyField@AuxAddToFields[1]{}
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{huh2024prh}
+\citation{huh2024prh}
+\citation{huh2024prh}
+\citation{hendrycks2021nae}
 \citation{hendrycks2021nae}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}Methodology}{1}{section.2}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {3}Results}{2}{section.3}\protected@file@percent }
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Vision-Vision Alignment on Places365’s Validation Dataset}{2}{subsection.3.1}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Vision-vision alignment measured with various metrics. Spearman's rank correlation among different metrics and batch sizes when used to measure alignment among 78 vision models.\relax }}{2}{figure.caption.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Vision-Vision Alignment on In-Distribution Data}{2}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Vision-vision alignment measured on Places365’s validation dataset using various metrics. High Spearman's rank correlation among different metrics indicates alignment among vision models.\relax }}{2}{figure.caption.1}\protected@file@percent }
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
-\newlabel{fig:prh_correlation}{{1}{2}{Vision-vision alignment measured with various metrics. Spearman's rank correlation among different metrics and batch sizes when used to measure alignment among 78 vision models.\relax }{figure.caption.1}{}}
+\newlabel{fig:prh_correlation}{{1}{2}{Vision-vision alignment measured on Places365’s validation dataset using various metrics. High Spearman's rank correlation among different metrics indicates alignment among vision models.\relax }{figure.caption.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Vision-Vision Alignment on ImageNet-O}{3}{subsection.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Spearman correlation of alignment scores across metrics and configurations on the ImageNet-O dataset.\relax }}{3}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:prh_correlation_ood}{{2}{3}{Spearman correlation of alignment scores across metrics and configurations on the ImageNet-O dataset.\relax }{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Alignment of models on ImageNet-O dataset. The Spearman correlation suggests that even with outlier data, models maintain a shared statistical representation, albeit with higher prediction errors.\relax }}{3}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:prh_correlation_ood}{{2}{3}{Alignment of models on ImageNet-O dataset. The Spearman correlation suggests that even with outlier data, models maintain a shared statistical representation, albeit with higher prediction errors.\relax }{figure.caption.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Vision-Vision Alignment on Random Data}{4}{subsection.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Spearman correlation of alignment scores across metrics and configurations on randomly generated images.\relax }}{4}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:prh_correlation_random}{{3}{4}{Spearman correlation of alignment scores across metrics and configurations on randomly generated images.\relax }{figure.caption.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Spearman correlation of alignment scores on random noise data. The lower correlation values indicate a breakdown in representational alignment, suggesting that random data lacks the underlying structure needed for PRH.\relax }}{4}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:prh_correlation_random}{{3}{4}{Spearman correlation of alignment scores on random noise data. The lower correlation values indicate a breakdown in representational alignment, suggesting that random data lacks the underlying structure needed for PRH.\relax }{figure.caption.3}{}}
 \@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{4}{section.4}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{4}{section.5}\protected@file@percent }
 \bibcite{huh2024prh}{1}
