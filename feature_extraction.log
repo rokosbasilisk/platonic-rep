@@ -1,0 +1,417 @@
+2024-10-23 23:34:48,613 [INFO] Processing model: vit_tiny_patch16_224.augreg_in21k
+2024-10-23 23:34:48,614 [INFO] Loading saved features for vit_tiny_patch16_224.augreg_in21k from vit_tiny_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:34:48,631 [INFO] Processing model: vit_small_patch16_224.augreg_in21k
+2024-10-23 23:34:48,632 [INFO] Loading saved features for vit_small_patch16_224.augreg_in21k from vit_small_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:34:48,655 [INFO] Processing model: vit_base_patch16_224.augreg_in21k
+2024-10-23 23:34:48,656 [INFO] Loading saved features for vit_base_patch16_224.augreg_in21k from vit_base_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:34:48,692 [INFO] Processing model: vit_large_patch16_224.augreg_in21k
+2024-10-23 23:34:48,693 [INFO] Loading saved features for vit_large_patch16_224.augreg_in21k from vit_large_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:34:48,741 [INFO] Processing model: vit_base_patch16_224.mae
+2024-10-23 23:34:48,742 [INFO] Loading saved features for vit_base_patch16_224.mae from vit_base_patch16_224.mae_features.pt...
+2024-10-23 23:34:48,777 [INFO] Processing model: vit_large_patch16_224.mae
+2024-10-23 23:34:48,778 [INFO] Loading saved features for vit_large_patch16_224.mae from vit_large_patch16_224.mae_features.pt...
+2024-10-23 23:34:48,825 [INFO] Processing model: vit_huge_patch14_224.mae
+2024-10-23 23:34:48,825 [INFO] Loading saved features for vit_huge_patch14_224.mae from vit_huge_patch14_224.mae_features.pt...
+2024-10-23 23:34:48,882 [INFO] Processing model: vit_small_patch14_dinov2.lvd142m
+2024-10-23 23:34:48,882 [INFO] Loading saved features for vit_small_patch14_dinov2.lvd142m from vit_small_patch14_dinov2.lvd142m_features.pt...
+2024-10-23 23:34:48,903 [INFO] Processing model: vit_base_patch14_dinov2.lvd142m
+2024-10-23 23:34:48,903 [INFO] Loading saved features for vit_base_patch14_dinov2.lvd142m from vit_base_patch14_dinov2.lvd142m_features.pt...
+2024-10-23 23:34:48,938 [INFO] Processing model: vit_large_patch14_dinov2.lvd142m
+2024-10-23 23:34:48,939 [INFO] Loading saved features for vit_large_patch14_dinov2.lvd142m from vit_large_patch14_dinov2.lvd142m_features.pt...
+2024-10-23 23:34:48,985 [INFO] Processing model: vit_giant_patch14_dinov2.lvd142m
+2024-10-23 23:34:48,985 [INFO] Loading saved features for vit_giant_patch14_dinov2.lvd142m from vit_giant_patch14_dinov2.lvd142m_features.pt...
+2024-10-23 23:34:48,999 [INFO] Processing model: vit_base_patch16_clip_224.laion2b
+2024-10-23 23:34:49,000 [INFO] Loading saved features for vit_base_patch16_clip_224.laion2b from vit_base_patch16_clip_224.laion2b_features.pt...
+2024-10-23 23:34:49,009 [INFO] Processing model: vit_large_patch14_clip_224.laion2b
+2024-10-23 23:34:49,009 [INFO] Loading saved features for vit_large_patch14_clip_224.laion2b from vit_large_patch14_clip_224.laion2b_features.pt...
+2024-10-23 23:34:49,022 [INFO] Processing model: vit_huge_patch14_clip_224.laion2b
+2024-10-23 23:34:49,022 [INFO] Loading saved features for vit_huge_patch14_clip_224.laion2b from vit_huge_patch14_clip_224.laion2b_features.pt...
+2024-10-23 23:34:49,032 [INFO] Processing model: vit_base_patch16_clip_224.laion2b_ft_in12k
+2024-10-23 23:34:49,033 [INFO] Initializing model vit_base_patch16_clip_224.laion2b_ft_in12k...
+2024-10-23 23:34:50,406 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_clip_224.laion2b_ft_in12k)
+2024-10-23 23:34:50,719 [INFO] [timm/vit_base_patch16_clip_224.laion2b_ft_in12k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:34:51,462 [INFO] Model vit_base_patch16_clip_224.laion2b_ft_in12k initialized successfully.
+2024-10-23 23:34:51,465 [WARNING] Directory /path/to/noise_steps/step_000 does not exist. Skipping step 0.
+2024-10-23 23:34:51,465 [WARNING] Directory /path/to/noise_steps/step_005 does not exist. Skipping step 5.
+2024-10-23 23:34:51,466 [WARNING] Directory /path/to/noise_steps/step_010 does not exist. Skipping step 10.
+2024-10-23 23:34:51,467 [WARNING] Directory /path/to/noise_steps/step_015 does not exist. Skipping step 15.
+2024-10-23 23:34:51,467 [WARNING] Directory /path/to/noise_steps/step_020 does not exist. Skipping step 20.
+2024-10-23 23:34:51,468 [WARNING] Directory /path/to/noise_steps/step_025 does not exist. Skipping step 25.
+2024-10-23 23:34:51,469 [WARNING] Directory /path/to/noise_steps/step_030 does not exist. Skipping step 30.
+2024-10-23 23:34:51,469 [WARNING] Directory /path/to/noise_steps/step_035 does not exist. Skipping step 35.
+2024-10-23 23:34:51,469 [WARNING] Directory /path/to/noise_steps/step_040 does not exist. Skipping step 40.
+2024-10-23 23:34:51,470 [WARNING] Directory /path/to/noise_steps/step_045 does not exist. Skipping step 45.
+2024-10-23 23:34:51,470 [WARNING] Directory /path/to/noise_steps/step_050 does not exist. Skipping step 50.
+2024-10-23 23:34:51,470 [WARNING] Directory /path/to/noise_steps/step_055 does not exist. Skipping step 55.
+2024-10-23 23:34:51,471 [WARNING] Directory /path/to/noise_steps/step_060 does not exist. Skipping step 60.
+2024-10-23 23:34:51,471 [WARNING] Directory /path/to/noise_steps/step_065 does not exist. Skipping step 65.
+2024-10-23 23:34:51,471 [WARNING] Directory /path/to/noise_steps/step_070 does not exist. Skipping step 70.
+2024-10-23 23:34:51,472 [WARNING] Directory /path/to/noise_steps/step_075 does not exist. Skipping step 75.
+2024-10-23 23:34:51,472 [WARNING] Directory /path/to/noise_steps/step_080 does not exist. Skipping step 80.
+2024-10-23 23:34:51,473 [WARNING] Directory /path/to/noise_steps/step_085 does not exist. Skipping step 85.
+2024-10-23 23:34:51,474 [WARNING] Directory /path/to/noise_steps/step_090 does not exist. Skipping step 90.
+2024-10-23 23:34:51,475 [WARNING] Directory /path/to/noise_steps/step_095 does not exist. Skipping step 95.
+2024-10-23 23:34:51,633 [INFO] Cleared GPU memory after processing model vit_base_patch16_clip_224.laion2b_ft_in12k.
+2024-10-23 23:34:51,670 [INFO] Processing model: vit_large_patch14_clip_224.laion2b_ft_in12k
+2024-10-23 23:34:51,671 [INFO] Initializing model vit_large_patch14_clip_224.laion2b_ft_in12k...
+2024-10-23 23:34:55,689 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_large_patch14_clip_224.laion2b_ft_in12k)
+2024-10-23 23:34:56,119 [INFO] [timm/vit_large_patch14_clip_224.laion2b_ft_in12k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:34:58,519 [INFO] Model vit_large_patch14_clip_224.laion2b_ft_in12k initialized successfully.
+2024-10-23 23:34:58,521 [WARNING] Directory /path/to/noise_steps/step_000 does not exist. Skipping step 0.
+2024-10-23 23:34:58,521 [WARNING] Directory /path/to/noise_steps/step_005 does not exist. Skipping step 5.
+2024-10-23 23:34:58,522 [WARNING] Directory /path/to/noise_steps/step_010 does not exist. Skipping step 10.
+2024-10-23 23:34:58,522 [WARNING] Directory /path/to/noise_steps/step_015 does not exist. Skipping step 15.
+2024-10-23 23:34:58,522 [WARNING] Directory /path/to/noise_steps/step_020 does not exist. Skipping step 20.
+2024-10-23 23:34:58,523 [WARNING] Directory /path/to/noise_steps/step_025 does not exist. Skipping step 25.
+2024-10-23 23:34:58,523 [WARNING] Directory /path/to/noise_steps/step_030 does not exist. Skipping step 30.
+2024-10-23 23:34:58,523 [WARNING] Directory /path/to/noise_steps/step_035 does not exist. Skipping step 35.
+2024-10-23 23:34:58,524 [WARNING] Directory /path/to/noise_steps/step_040 does not exist. Skipping step 40.
+2024-10-23 23:34:58,524 [WARNING] Directory /path/to/noise_steps/step_045 does not exist. Skipping step 45.
+2024-10-23 23:34:58,524 [WARNING] Directory /path/to/noise_steps/step_050 does not exist. Skipping step 50.
+2024-10-23 23:34:58,526 [WARNING] Directory /path/to/noise_steps/step_055 does not exist. Skipping step 55.
+2024-10-23 23:34:58,526 [WARNING] Directory /path/to/noise_steps/step_060 does not exist. Skipping step 60.
+2024-10-23 23:34:58,526 [WARNING] Directory /path/to/noise_steps/step_065 does not exist. Skipping step 65.
+2024-10-23 23:34:58,527 [WARNING] Directory /path/to/noise_steps/step_070 does not exist. Skipping step 70.
+2024-10-23 23:34:58,527 [WARNING] Directory /path/to/noise_steps/step_075 does not exist. Skipping step 75.
+2024-10-23 23:34:58,528 [WARNING] Directory /path/to/noise_steps/step_080 does not exist. Skipping step 80.
+2024-10-23 23:34:58,528 [WARNING] Directory /path/to/noise_steps/step_085 does not exist. Skipping step 85.
+2024-10-23 23:34:58,529 [WARNING] Directory /path/to/noise_steps/step_090 does not exist. Skipping step 90.
+2024-10-23 23:34:58,529 [WARNING] Directory /path/to/noise_steps/step_095 does not exist. Skipping step 95.
+2024-10-23 23:34:58,681 [INFO] Cleared GPU memory after processing model vit_large_patch14_clip_224.laion2b_ft_in12k.
+2024-10-23 23:34:58,803 [INFO] Processing model: vit_huge_patch14_clip_224.laion2b_ft_in12k
+2024-10-23 23:34:58,803 [INFO] Initializing model vit_huge_patch14_clip_224.laion2b_ft_in12k...
+2024-10-23 23:35:07,058 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_huge_patch14_clip_224.laion2b_ft_in12k)
+2024-10-23 23:35:07,319 [INFO] [timm/vit_huge_patch14_clip_224.laion2b_ft_in12k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:35:12,133 [INFO] Model vit_huge_patch14_clip_224.laion2b_ft_in12k initialized successfully.
+2024-10-23 23:35:12,136 [WARNING] Directory /path/to/noise_steps/step_000 does not exist. Skipping step 0.
+2024-10-23 23:35:12,136 [WARNING] Directory /path/to/noise_steps/step_005 does not exist. Skipping step 5.
+2024-10-23 23:35:12,136 [WARNING] Directory /path/to/noise_steps/step_010 does not exist. Skipping step 10.
+2024-10-23 23:35:12,137 [WARNING] Directory /path/to/noise_steps/step_015 does not exist. Skipping step 15.
+2024-10-23 23:35:12,137 [WARNING] Directory /path/to/noise_steps/step_020 does not exist. Skipping step 20.
+2024-10-23 23:35:12,138 [WARNING] Directory /path/to/noise_steps/step_025 does not exist. Skipping step 25.
+2024-10-23 23:35:12,138 [WARNING] Directory /path/to/noise_steps/step_030 does not exist. Skipping step 30.
+2024-10-23 23:35:12,138 [WARNING] Directory /path/to/noise_steps/step_035 does not exist. Skipping step 35.
+2024-10-23 23:35:12,139 [WARNING] Directory /path/to/noise_steps/step_040 does not exist. Skipping step 40.
+2024-10-23 23:35:12,139 [WARNING] Directory /path/to/noise_steps/step_045 does not exist. Skipping step 45.
+2024-10-23 23:35:12,139 [WARNING] Directory /path/to/noise_steps/step_050 does not exist. Skipping step 50.
+2024-10-23 23:35:12,140 [WARNING] Directory /path/to/noise_steps/step_055 does not exist. Skipping step 55.
+2024-10-23 23:35:12,140 [WARNING] Directory /path/to/noise_steps/step_060 does not exist. Skipping step 60.
+2024-10-23 23:35:12,140 [WARNING] Directory /path/to/noise_steps/step_065 does not exist. Skipping step 65.
+2024-10-23 23:35:12,141 [WARNING] Directory /path/to/noise_steps/step_070 does not exist. Skipping step 70.
+2024-10-23 23:35:12,141 [WARNING] Directory /path/to/noise_steps/step_075 does not exist. Skipping step 75.
+2024-10-23 23:35:12,141 [WARNING] Directory /path/to/noise_steps/step_080 does not exist. Skipping step 80.
+2024-10-23 23:35:12,142 [WARNING] Directory /path/to/noise_steps/step_085 does not exist. Skipping step 85.
+2024-10-23 23:35:12,142 [WARNING] Directory /path/to/noise_steps/step_090 does not exist. Skipping step 90.
+2024-10-23 23:35:12,142 [WARNING] Directory /path/to/noise_steps/step_095 does not exist. Skipping step 95.
+2024-10-23 23:35:12,288 [INFO] Cleared GPU memory after processing model vit_huge_patch14_clip_224.laion2b_ft_in12k.
+2024-10-23 23:35:12,581 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,582 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,582 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,633 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,634 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,634 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,680 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,681 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,681 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,724 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,725 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,725 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,769 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,770 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,770 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,808 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,809 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:12,809 [WARNING] Missing features for step 0: 0
+2024-10-23 23:35:41,708 [INFO] Processing model: vit_tiny_patch16_224.augreg_in21k
+2024-10-23 23:35:41,708 [INFO] Loading saved features for vit_tiny_patch16_224.augreg_in21k from vit_tiny_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:35:41,712 [INFO] Processing model: vit_small_patch16_224.augreg_in21k
+2024-10-23 23:35:41,713 [INFO] Loading saved features for vit_small_patch16_224.augreg_in21k from vit_small_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:35:41,716 [INFO] Processing model: vit_base_patch16_224.augreg_in21k
+2024-10-23 23:35:41,717 [INFO] Loading saved features for vit_base_patch16_224.augreg_in21k from vit_base_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:35:41,721 [INFO] Processing model: vit_large_patch16_224.augreg_in21k
+2024-10-23 23:35:41,721 [INFO] Loading saved features for vit_large_patch16_224.augreg_in21k from vit_large_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:35:41,726 [INFO] Processing model: vit_base_patch16_224.mae
+2024-10-23 23:35:41,726 [INFO] Loading saved features for vit_base_patch16_224.mae from vit_base_patch16_224.mae_features.pt...
+2024-10-23 23:35:41,730 [INFO] Processing model: vit_large_patch16_224.mae
+2024-10-23 23:35:41,731 [INFO] Loading saved features for vit_large_patch16_224.mae from vit_large_patch16_224.mae_features.pt...
+2024-10-23 23:35:41,735 [INFO] Processing model: vit_huge_patch14_224.mae
+2024-10-23 23:35:41,736 [INFO] Loading saved features for vit_huge_patch14_224.mae from vit_huge_patch14_224.mae_features.pt...
+2024-10-23 23:35:41,742 [INFO] Processing model: vit_small_patch14_dinov2.lvd142m
+2024-10-23 23:35:41,742 [INFO] Loading saved features for vit_small_patch14_dinov2.lvd142m from vit_small_patch14_dinov2.lvd142m_features.pt...
+2024-10-23 23:35:41,745 [INFO] Processing model: vit_base_patch14_dinov2.lvd142m
+2024-10-23 23:35:41,745 [INFO] Loading saved features for vit_base_patch14_dinov2.lvd142m from vit_base_patch14_dinov2.lvd142m_features.pt...
+2024-10-23 23:35:41,749 [INFO] Processing model: vit_large_patch14_dinov2.lvd142m
+2024-10-23 23:35:41,750 [INFO] Loading saved features for vit_large_patch14_dinov2.lvd142m from vit_large_patch14_dinov2.lvd142m_features.pt...
+2024-10-23 23:35:41,758 [INFO] Processing model: vit_giant_patch14_dinov2.lvd142m
+2024-10-23 23:35:41,759 [INFO] Loading saved features for vit_giant_patch14_dinov2.lvd142m from vit_giant_patch14_dinov2.lvd142m_features.pt...
+2024-10-23 23:35:41,763 [INFO] Processing model: vit_base_patch16_clip_224.laion2b
+2024-10-23 23:35:41,764 [INFO] Loading saved features for vit_base_patch16_clip_224.laion2b from vit_base_patch16_clip_224.laion2b_features.pt...
+2024-10-23 23:35:41,766 [INFO] Processing model: vit_large_patch14_clip_224.laion2b
+2024-10-23 23:35:41,767 [INFO] Loading saved features for vit_large_patch14_clip_224.laion2b from vit_large_patch14_clip_224.laion2b_features.pt...
+2024-10-23 23:35:41,770 [INFO] Processing model: vit_huge_patch14_clip_224.laion2b
+2024-10-23 23:35:41,771 [INFO] Loading saved features for vit_huge_patch14_clip_224.laion2b from vit_huge_patch14_clip_224.laion2b_features.pt...
+2024-10-23 23:35:41,774 [INFO] Processing model: vit_base_patch16_clip_224.laion2b_ft_in12k
+2024-10-23 23:35:41,774 [INFO] Initializing model vit_base_patch16_clip_224.laion2b_ft_in12k...
+2024-10-23 23:35:42,944 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_clip_224.laion2b_ft_in12k)
+2024-10-23 23:35:43,180 [INFO] [timm/vit_base_patch16_clip_224.laion2b_ft_in12k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:35:43,244 [INFO] Model vit_base_patch16_clip_224.laion2b_ft_in12k initialized successfully.
+2024-10-23 23:35:45,477 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 0.
+2024-10-23 23:35:46,964 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 5.
+2024-10-23 23:35:48,215 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 10.
+2024-10-23 23:35:49,505 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 15.
+2024-10-23 23:35:50,822 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 20.
+2024-10-23 23:35:52,059 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 25.
+2024-10-23 23:35:53,281 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 30.
+2024-10-23 23:35:54,685 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 35.
+2024-10-23 23:35:55,822 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 40.
+2024-10-23 23:35:57,085 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 45.
+2024-10-23 23:35:58,381 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 50.
+2024-10-23 23:35:59,509 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 55.
+2024-10-23 23:36:00,714 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 60.
+2024-10-23 23:36:01,813 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 65.
+2024-10-23 23:36:03,000 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 70.
+2024-10-23 23:36:04,156 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 75.
+2024-10-23 23:36:05,307 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 80.
+2024-10-23 23:36:06,496 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 85.
+2024-10-23 23:36:07,766 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 90.
+2024-10-23 23:36:09,067 [INFO] Saved features for model vit_base_patch16_clip_224.laion2b_ft_in12k, step 95.
+2024-10-23 23:36:09,197 [INFO] Cleared GPU memory after processing model vit_base_patch16_clip_224.laion2b_ft_in12k.
+2024-10-23 23:36:09,198 [INFO] Processing model: vit_large_patch14_clip_224.laion2b_ft_in12k
+2024-10-23 23:36:09,199 [INFO] Initializing model vit_large_patch14_clip_224.laion2b_ft_in12k...
+2024-10-23 23:36:13,005 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_large_patch14_clip_224.laion2b_ft_in12k)
+2024-10-23 23:36:13,244 [INFO] [timm/vit_large_patch14_clip_224.laion2b_ft_in12k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:36:13,443 [INFO] Model vit_large_patch14_clip_224.laion2b_ft_in12k initialized successfully.
+2024-10-23 23:36:15,142 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 0.
+2024-10-23 23:36:16,751 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 5.
+2024-10-23 23:36:18,261 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 10.
+2024-10-23 23:36:19,710 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 15.
+2024-10-23 23:36:21,209 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 20.
+2024-10-23 23:36:22,755 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 25.
+2024-10-23 23:36:24,058 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 30.
+2024-10-23 23:36:25,560 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 35.
+2024-10-23 23:36:27,117 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 40.
+2024-10-23 23:36:28,459 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 45.
+2024-10-23 23:36:29,875 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 50.
+2024-10-23 23:36:31,238 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 55.
+2024-10-23 23:36:32,787 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 60.
+2024-10-23 23:36:34,052 [INFO] Saved features for model vit_large_patch14_clip_224.laion2b_ft_in12k, step 65.
+2024-10-23 23:36:35,519 [INFO] Cleared GPU memory after processing model vit_large_patch14_clip_224.laion2b_ft_in12k.
+2024-10-23 23:36:52,892 [INFO] Processing model: vit_tiny_patch16_224.augreg_in21k
+2024-10-23 23:36:52,893 [INFO] Initializing model vit_tiny_patch16_224.augreg_in21k...
+2024-10-23 23:36:53,017 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_tiny_patch16_224.augreg_in21k)
+2024-10-23 23:36:53,266 [INFO] [timm/vit_tiny_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:36:53,371 [INFO] Model vit_tiny_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:36:54,434 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 0.
+2024-10-23 23:36:55,497 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 5.
+2024-10-23 23:36:56,493 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 10.
+2024-10-23 23:36:57,441 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 15.
+2024-10-23 23:36:58,543 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 20.
+2024-10-23 23:36:59,432 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 25.
+2024-10-23 23:37:00,303 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 30.
+2024-10-23 23:37:01,157 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 35.
+2024-10-23 23:37:02,081 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 40.
+2024-10-23 23:37:03,129 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 45.
+2024-10-23 23:37:03,968 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 50.
+2024-10-23 23:37:04,788 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 55.
+2024-10-23 23:37:05,589 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 60.
+2024-10-23 23:37:06,494 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 65.
+2024-10-23 23:37:07,278 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 70.
+2024-10-23 23:37:08,103 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 75.
+2024-10-23 23:37:08,905 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 80.
+2024-10-23 23:37:09,917 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 85.
+2024-10-23 23:37:10,756 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 90.
+2024-10-23 23:37:11,611 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 95.
+2024-10-23 23:37:11,747 [INFO] Cleared GPU memory after processing model vit_tiny_patch16_224.augreg_in21k.
+2024-10-23 23:37:11,748 [INFO] Processing model: vit_small_patch16_224.augreg_in21k
+2024-10-23 23:37:11,748 [INFO] Initializing model vit_small_patch16_224.augreg_in21k...
+2024-10-23 23:37:12,154 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_small_patch16_224.augreg_in21k)
+2024-10-23 23:37:12,407 [INFO] [timm/vit_small_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:37:12,667 [INFO] Model vit_small_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:37:13,774 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 0.
+2024-10-23 23:37:14,804 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 5.
+2024-10-23 23:37:15,958 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 10.
+2024-10-23 23:37:16,932 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 15.
+2024-10-23 23:37:17,859 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 20.
+2024-10-23 23:37:18,799 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 25.
+2024-10-23 23:37:19,845 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 30.
+2024-10-23 23:37:20,777 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 35.
+2024-10-23 23:37:21,619 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 40.
+2024-10-23 23:37:22,567 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 45.
+2024-10-23 23:37:23,580 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 50.
+2024-10-23 23:37:24,429 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 55.
+2024-10-23 23:37:25,259 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 60.
+2024-10-23 23:37:26,091 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 65.
+2024-10-23 23:37:26,906 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 70.
+2024-10-23 23:37:27,702 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 75.
+2024-10-23 23:37:28,516 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 80.
+2024-10-23 23:37:29,318 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 85.
+2024-10-23 23:37:30,183 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 90.
+2024-10-23 23:37:31,026 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 95.
+2024-10-23 23:37:31,160 [INFO] Cleared GPU memory after processing model vit_small_patch16_224.augreg_in21k.
+2024-10-23 23:37:31,162 [INFO] Processing model: vit_base_patch16_224.augreg_in21k
+2024-10-23 23:37:31,162 [INFO] Loading saved features for vit_base_patch16_224.augreg_in21k from vit_base_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:37:31,166 [INFO] Processing model: vit_large_patch16_224.augreg_in21k
+2024-10-23 23:37:31,166 [INFO] Initializing model vit_large_patch16_224.augreg_in21k...
+2024-10-23 23:37:34,794 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_large_patch16_224.augreg_in21k)
+2024-10-23 23:37:35,050 [INFO] [timm/vit_large_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:37:37,526 [INFO] Model vit_large_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:37:39,257 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 0.
+2024-10-23 23:37:40,724 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 5.
+2024-10-23 23:37:42,247 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 10.
+2024-10-23 23:37:43,587 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 15.
+2024-10-23 23:37:44,916 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 20.
+2024-10-23 23:37:46,150 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 25.
+2024-10-23 23:37:47,342 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 30.
+2024-10-23 23:37:48,749 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 35.
+2024-10-23 23:37:50,046 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 40.
+2024-10-23 23:37:51,440 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 45.
+2024-10-23 23:37:52,650 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 50.
+2024-10-23 23:37:53,857 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 55.
+2024-10-23 23:37:55,123 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 60.
+2024-10-23 23:37:56,404 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 65.
+2024-10-23 23:37:57,576 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 70.
+2024-10-23 23:37:58,797 [INFO] Saved features for model vit_large_patch16_224.augreg_in21k, step 75.
+2024-10-23 23:37:59,781 [INFO] Cleared GPU memory after processing model vit_large_patch16_224.augreg_in21k.
+2024-10-23 23:38:31,958 [INFO] Processing model: vit_tiny_patch16_224.augreg_in21k
+2024-10-23 23:38:31,959 [INFO] Initializing model vit_tiny_patch16_224.augreg_in21k...
+2024-10-23 23:38:32,089 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_tiny_patch16_224.augreg_in21k)
+2024-10-23 23:38:32,324 [INFO] [timm/vit_tiny_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:38:32,339 [INFO] Model vit_tiny_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:38:33,495 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 0.
+2024-10-23 23:38:34,544 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 5.
+2024-10-23 23:38:35,778 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 10.
+2024-10-23 23:38:36,729 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 15.
+2024-10-23 23:38:37,644 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 20.
+2024-10-23 23:38:38,538 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 25.
+2024-10-23 23:38:39,568 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 30.
+2024-10-23 23:38:40,421 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 35.
+2024-10-23 23:38:41,282 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 40.
+2024-10-23 23:38:42,216 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 45.
+2024-10-23 23:38:43,048 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 50.
+2024-10-23 23:38:43,900 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 55.
+2024-10-23 23:38:44,892 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 60.
+2024-10-23 23:38:45,750 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 65.
+2024-10-23 23:38:46,532 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 70.
+2024-10-23 23:38:47,316 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 75.
+2024-10-23 23:38:48,121 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 80.
+2024-10-23 23:38:48,912 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 85.
+2024-10-23 23:38:49,705 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 90.
+2024-10-23 23:38:50,522 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 95.
+2024-10-23 23:38:50,658 [INFO] Cleared GPU memory after processing model vit_tiny_patch16_224.augreg_in21k.
+2024-10-23 23:38:50,659 [INFO] Processing model: vit_small_patch16_224.augreg_in21k
+2024-10-23 23:38:50,660 [INFO] Initializing model vit_small_patch16_224.augreg_in21k...
+2024-10-23 23:38:50,981 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_small_patch16_224.augreg_in21k)
+2024-10-23 23:38:51,221 [INFO] [timm/vit_small_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:38:51,248 [INFO] Model vit_small_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:38:52,254 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 0.
+2024-10-23 23:38:53,318 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 5.
+2024-10-23 23:38:54,300 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 10.
+2024-10-23 23:38:55,513 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 15.
+2024-10-23 23:38:56,514 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 20.
+2024-10-23 23:38:57,499 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 25.
+2024-10-23 23:38:58,570 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 30.
+2024-10-23 23:38:59,420 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 35.
+2024-10-23 23:39:00,279 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 40.
+2024-10-23 23:39:01,109 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 45.
+2024-10-23 23:39:01,946 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 50.
+2024-10-23 23:39:02,814 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 55.
+2024-10-23 23:39:03,623 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 60.
+2024-10-23 23:39:04,456 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 65.
+2024-10-23 23:39:05,426 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 70.
+2024-10-23 23:39:06,266 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 75.
+2024-10-23 23:39:07,062 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 80.
+2024-10-23 23:39:07,874 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 85.
+2024-10-23 23:39:08,779 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 90.
+2024-10-23 23:39:09,611 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 95.
+2024-10-23 23:39:09,748 [INFO] Cleared GPU memory after processing model vit_small_patch16_224.augreg_in21k.
+2024-10-23 23:39:09,749 [INFO] Processing model: vit_base_patch16_224.augreg_in21k
+2024-10-23 23:39:09,750 [INFO] Initializing model vit_base_patch16_224.augreg_in21k...
+2024-10-23 23:39:10,839 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg_in21k)
+2024-10-23 23:39:11,076 [INFO] [timm/vit_base_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:39:11,868 [INFO] Model vit_base_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:39:13,162 [INFO] Saved features for model vit_base_patch16_224.augreg_in21k, step 0.
+2024-10-23 23:39:14,258 [INFO] Saved features for model vit_base_patch16_224.augreg_in21k, step 5.
+2024-10-23 23:39:15,429 [INFO] Saved features for model vit_base_patch16_224.augreg_in21k, step 10.
+2024-10-23 23:39:16,442 [INFO] Saved features for model vit_base_patch16_224.augreg_in21k, step 15.
+2024-10-23 23:39:17,570 [INFO] Saved features for model vit_base_patch16_224.augreg_in21k, step 20.
+2024-10-23 23:39:18,211 [INFO] Cleared GPU memory after processing model vit_base_patch16_224.augreg_in21k.
+2024-10-23 23:39:44,112 [INFO] Processing model: vit_tiny_patch16_224.augreg_in21k
+2024-10-23 23:39:44,112 [INFO] Initializing model vit_tiny_patch16_224.augreg_in21k...
+2024-10-23 23:39:44,234 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_tiny_patch16_224.augreg_in21k)
+2024-10-23 23:39:44,474 [INFO] [timm/vit_tiny_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:39:44,489 [INFO] Model vit_tiny_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:39:45,686 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 0.
+2024-10-23 23:39:46,763 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 5.
+2024-10-23 23:39:47,969 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 10.
+2024-10-23 23:39:48,930 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 15.
+2024-10-23 23:39:49,842 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 20.
+2024-10-23 23:39:50,751 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 25.
+2024-10-23 23:39:51,772 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 30.
+2024-10-23 23:39:52,625 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 35.
+2024-10-23 23:39:53,515 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 40.
+2024-10-23 23:39:54,389 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 45.
+2024-10-23 23:39:55,226 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 50.
+2024-10-23 23:39:56,114 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 55.
+2024-10-23 23:39:57,072 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 60.
+2024-10-23 23:39:57,921 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 65.
+2024-10-23 23:39:58,695 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 70.
+2024-10-23 23:39:59,464 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 75.
+2024-10-23 23:40:00,269 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 80.
+2024-10-23 23:40:01,076 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 85.
+2024-10-23 23:40:01,880 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 90.
+2024-10-23 23:40:02,694 [INFO] Saved features for model vit_tiny_patch16_224.augreg_in21k, step 95.
+2024-10-23 23:40:02,840 [INFO] Cleared GPU memory after processing model vit_tiny_patch16_224.augreg_in21k.
+2024-10-23 23:40:02,842 [INFO] Processing model: vit_small_patch16_224.augreg_in21k
+2024-10-23 23:40:02,842 [INFO] Initializing model vit_small_patch16_224.augreg_in21k...
+2024-10-23 23:40:03,162 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_small_patch16_224.augreg_in21k)
+2024-10-23 23:40:03,417 [INFO] [timm/vit_small_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:40:03,443 [INFO] Model vit_small_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:40:04,457 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 0.
+2024-10-23 23:40:05,521 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 5.
+2024-10-23 23:40:06,511 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 10.
+2024-10-23 23:40:07,717 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 15.
+2024-10-23 23:40:08,658 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 20.
+2024-10-23 23:40:09,623 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 25.
+2024-10-23 23:40:10,480 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 30.
+2024-10-23 23:40:11,318 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 35.
+2024-10-23 23:40:12,354 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 40.
+2024-10-23 23:40:13,210 [INFO] Saved features for model vit_small_patch16_224.augreg_in21k, step 45.
+2024-10-23 23:40:13,749 [INFO] Cleared GPU memory after processing model vit_small_patch16_224.augreg_in21k.
+2024-10-23 23:40:44,943 [INFO] Processing model: vit_tiny_patch16_224.augreg_in21k
+2024-10-23 23:40:44,943 [INFO] Loading saved features for vit_tiny_patch16_224.augreg_in21k from vit_tiny_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:40:44,946 [INFO] Processing model: vit_small_patch16_224.augreg_in21k
+2024-10-23 23:40:44,947 [INFO] Loading saved features for vit_small_patch16_224.augreg_in21k from vit_small_patch16_224.augreg_in21k_features.pt...
+2024-10-23 23:40:44,950 [INFO] Processing model: vit_base_patch16_224.augreg_in21k
+2024-10-23 23:40:46,060 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg_in21k)
+2024-10-23 23:40:46,293 [INFO] [timm/vit_base_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:40:46,357 [INFO] Model vit_base_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:40:48,154 [INFO] Cleared GPU memory after processing model vit_base_patch16_224.augreg_in21k.
+2024-10-23 23:40:52,449 [INFO] Processing model: vit_tiny_patch16_224.augreg_in21k
+2024-10-23 23:40:52,570 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_tiny_patch16_224.augreg_in21k)
+2024-10-23 23:40:52,810 [INFO] [timm/vit_tiny_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:40:52,824 [INFO] Model vit_tiny_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:41:10,636 [INFO] Cleared GPU memory after processing model vit_tiny_patch16_224.augreg_in21k.
+2024-10-23 23:41:10,637 [INFO] Processing model: vit_small_patch16_224.augreg_in21k
+2024-10-23 23:41:10,987 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_small_patch16_224.augreg_in21k)
+2024-10-23 23:41:11,243 [INFO] [timm/vit_small_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:41:11,269 [INFO] Model vit_small_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:41:29,561 [INFO] Cleared GPU memory after processing model vit_small_patch16_224.augreg_in21k.
+2024-10-23 23:41:29,562 [INFO] Processing model: vit_base_patch16_224.augreg_in21k
+2024-10-23 23:41:30,658 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.augreg_in21k)
+2024-10-23 23:41:30,888 [INFO] [timm/vit_base_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:41:30,953 [INFO] Model vit_base_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:41:50,706 [INFO] Cleared GPU memory after processing model vit_base_patch16_224.augreg_in21k.
+2024-10-23 23:41:50,708 [INFO] Processing model: vit_large_patch16_224.augreg_in21k
+2024-10-23 23:41:54,200 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_large_patch16_224.augreg_in21k)
+2024-10-23 23:41:54,438 [INFO] [timm/vit_large_patch16_224.augreg_in21k] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:41:54,631 [INFO] Model vit_large_patch16_224.augreg_in21k initialized successfully.
+2024-10-23 23:42:20,555 [INFO] Cleared GPU memory after processing model vit_large_patch16_224.augreg_in21k.
+2024-10-23 23:42:20,557 [INFO] Processing model: vit_base_patch16_224.mae
+2024-10-23 23:42:21,478 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_base_patch16_224.mae)
+2024-10-23 23:42:21,714 [INFO] [timm/vit_base_patch16_224.mae] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:42:22,385 [INFO] Model vit_base_patch16_224.mae initialized successfully.
+2024-10-23 23:42:42,441 [INFO] Cleared GPU memory after processing model vit_base_patch16_224.mae.
+2024-10-23 23:42:42,443 [INFO] Processing model: vit_large_patch16_224.mae
+2024-10-23 23:42:45,769 [INFO] Loading pretrained weights from Hugging Face hub (timm/vit_large_patch16_224.mae)
+2024-10-23 23:42:46,014 [INFO] [timm/vit_large_patch16_224.mae] Safe alternative available for 'pytorch_model.bin' (as 'model.safetensors'). Loading weights using safetensors.
+2024-10-23 23:42:48,343 [INFO] Model vit_large_patch16_224.mae initialized successfully.

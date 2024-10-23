@@ -1,7 +1,9 @@
 *.sh
 data/
 results/
-*pt
+*.pt
+*.png
+*.jpg
 *egg-info/**
 **__pycache__/**
 *.pyc*
