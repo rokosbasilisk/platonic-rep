@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.21)  21 OCT 2024 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.10.21)  25 OCT 2024 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -434,42 +434,82 @@ LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 2
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-)
-<prh_correlation.jpg, id=41, 922.44624pt x 821.0675pt>
-File: prh_correlation.jpg Graphic file (type jpg)
-<use prh_correlation.jpg>
-Package pdftex.def Info: prh_correlation.jpg  used on input line 46.
-(pdftex.def)             Requested size: 452.9679pt x 403.17854pt.
- [1
+) [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+<prh_correlation.jpg, id=59, 922.44624pt x 821.0675pt>
+File: prh_correlation.jpg Graphic file (type jpg)
+<use prh_correlation.jpg>
+Package pdftex.def Info: prh_correlation.jpg  used on input line 52.
+(pdftex.def)             Requested size: 452.9679pt x 403.17854pt.
 <prh_correlation_ood.jpg, id=60, 908.39375pt x 753.81625pt>
 File: prh_correlation_ood.jpg Graphic file (type jpg)
 <use prh_correlation_ood.jpg>
-Package pdftex.def Info: prh_correlation_ood.jpg  used on input line 54.
+Package pdftex.def Info: prh_correlation_ood.jpg  used on input line 60.
 (pdftex.def)             Requested size: 452.9679pt x 375.895pt.
  [2 <./prh_correlation.jpg>]
-<prh_correlation_random.jpg, id=67, 883.3pt x 745.78625pt>
+<prh_correlation_random.jpg, id=69, 883.3pt x 745.78625pt>
 File: prh_correlation_random.jpg Graphic file (type jpg)
 <use prh_correlation_random.jpg>
-Package pdftex.def Info: prh_correlation_random.jpg  used on input line 62.
+Package pdftex.def Info: prh_correlation_random.jpg  used on input line 68.
 (pdftex.def)             Requested size: 452.9679pt x 382.45122pt.
- [3 <./prh_correlation_ood.jpg>] [4 <./prh_correlation_random.jpg>] [5
-
-] [6
+ [3 <./prh_correlation_ood.jpg>]
+<alignment_vs_signal_level.png, id=75, 682.55pt x 510.90875pt>
+File: alignment_vs_signal_level.png Graphic file (type png)
+<use alignment_vs_signal_level.png>
+Package pdftex.def Info: alignment_vs_signal_level.png  used on input line 76.
+(pdftex.def)             Requested size: 452.9679pt x 339.06401pt.
+ [4 <./prh_correlation_random.jpg>]
+<mean_alignment_score_14m.png, id=82, 722.7pt x 433.62pt>
+File: mean_alignment_score_14m.png Graphic file (type png)
+<use mean_alignment_score_14m.png>
+Package pdftex.def Info: mean_alignment_score_14m.png  used on input line 84.
+(pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
+<mean_alignment_score_160m.png, id=83, 722.7pt x 433.62pt>
+File: mean_alignment_score_160m.png Graphic file (type png)
+<use mean_alignment_score_160m.png>
+Package pdftex.def Info: mean_alignment_score_160m.png  used on input line 85.
+(pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
+<mean_alignment_score_410m.png, id=84, 722.7pt x 433.62pt>
+File: mean_alignment_score_410m.png Graphic file (type png)
+<use mean_alignment_score_410m.png>
+Package pdftex.def Info: mean_alignment_score_410m.png  used on input line 86.
+(pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
+<mean_alignment_score_1b.png, id=85, 722.7pt x 433.62pt>
+File: mean_alignment_score_1b.png Graphic file (type png)
+<use mean_alignment_score_1b.png>
+Package pdftex.def Info: mean_alignment_score_1b.png  used on input line 87.
+(pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
+<mean_alignment_score_1.4b.png, id=86, 722.7pt x 433.62pt>
+File: mean_alignment_score_1.4b.png Graphic file (type png)
+<use mean_alignment_score_1.4b.png>
+Package pdftex.def Info: mean_alignment_score_1.4b.png  used on input line 88.
+(pdftex.def)             Requested size: 217.42265pt x 130.45091pt.
+ [5 <./alignment_vs_signal_level.png>] [6 <./mean_alignment_score_14m.png> <./m
+ean_alignment_score_160m.png> <./mean_alignment_score_410m.png> <./mean_alignme
+nt_score_1b.png> <./mean_alignment_score_1.4b.png>] [7] [8
 
 ] (./paper.aux)
-Package rerunfilecheck Info: File `paper.out' has not changed.
-(rerunfilecheck)             Checksum: 3E872AAC5D7F3E57BD72358C589148F0;1060.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `paper.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `paper.out':
+(rerunfilecheck)             Before: 3E872AAC5D7F3E57BD72358C589148F0;1060
+(rerunfilecheck)             After:  AB3D68A6BCE2DE1FFFA0B88E4BDCFEEA;1539.
  ) 
 Here is how much of TeX's memory you used:
- 11496 strings out of 480247
- 182141 string characters out of 5896150
- 471679 words of memory out of 5000000
- 29270 multiletter control sequences out of 15000+600000
+ 11549 strings out of 480247
+ 183671 string characters out of 5896150
+ 472679 words of memory out of 5000000
+ 29308 multiletter control sequences out of 15000+600000
  481834 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 67i,6n,77p,690b,329s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 67i,6n,77p,714b,411s stack positions out of 5000i,500n,10000p,200000b,80000s
  </home/oppenheimer/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecti10
 00.600pk> </home/oppenheimer/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec
 /ecbx1200.600pk> </home/oppenheimer/.texlive2021/texmf-var/fonts/pk/ljfour/jkna
@@ -481,10 +521,10 @@ xmf-var/fonts/pk/ljfour/jknappen/ec/ecbx0900.600pk> </home/oppenheimer/.texlive
 2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ectt1200.600pk> </home/oppenheimer/.
 texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1200.600pk> </home/oppenh
 eimer/.texlive2021/texmf-var/fonts/pk/ljfour/jknappen/ec/ecrm1728.600pk>
-Output written on paper.pdf (6 pages, 653988 bytes).
+Output written on paper.pdf (8 pages, 1657914 bytes).
 PDF statistics:
- 403 PDF objects out of 1000 (max. 8388607)
- 117 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 80 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 455 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 110 words of extra memory for PDF output out of 10000 (max. 10000000)
 
