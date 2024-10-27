@@ -29,7 +29,7 @@ Understanding how neural networks form internal representations of the world has
 
 However, an important question remains: does this convergence persist when models are exposed to data significantly different from their training distributions? In this study, we address this by evaluating the behavior of PRH in various scenarios, including exposure to out-of-distribution (OOD) data and purely random data. Additionally, we explore how models' alignment evolves when progressively corrupted with noise and during different stages of language model training.
 
-\textit{[Placeholder: Briefly introduce any philosophical or theoretical motivations specific to your study that differ from prior works.]}
+
 
 \section{Methodology}
 To rigorously evaluate the PRH, we designed a series of experiments that progressively test the hypothesis under varying conditions of data distribution. The methodology is structured around three main experimental setups, each focusing on a distinct aspect of model alignment.
@@ -44,7 +44,7 @@ To rigorously evaluate the PRH, we designed a series of experiments that progres
 
 We measured alignment using Spearman's rank correlation on mutual k-NN distances between model representations, comparing how models interpret the similarity of various input data points.
 
-\textit{[Placeholder: Please describe the motivation behind using these specific datasets in more detail. Why were these choices made over others?]}
+
 
 \subsection{Noise Injection in Vision Models}
 \textbf{2. Progressive Noise Injection:} To understand the resilience of model alignment to data corruption, we conducted a noise injection experiment:
@@ -54,7 +54,7 @@ We measured alignment using Spearman's rank correlation on mutual k-NN distances
     \item The alignment scores were analyzed to reveal potential patterns in how noise impacts convergence, with a particular focus on detecting non-linear relationships.
 \end{itemize}
 
-\textit{[Placeholder: Detail the noise injection process. What type of noise was used? How were the levels of noise quantified? What criteria were used for choosing the 250 images?]}
+
 
 \subsection{Tracking Alignment During Language Model Training}
 \textbf{3. Evolution of Alignment During Training:} We also studied how alignment evolves during the training process of language models:
@@ -64,7 +64,7 @@ We measured alignment using Spearman's rank correlation on mutual k-NN distances
     \item This analysis aimed to uncover any phases of increased or decreased similarity, providing insights into how models internalize structure during different training stages.
 \end{itemize}
 
-\textit{[Placeholder: Explain the selection criteria for the six LLMs. Were they chosen based on size, architecture, or training data?]}
+
 
 \section{Results}
 \subsection{Alignment Across Data Types}
@@ -83,7 +83,7 @@ We measured alignment using Spearman's rank correlation on mutual k-NN distances
     \label{fig:prh_correlation_ood}
 \end{figure}
 
-\textit{[Placeholder: Provide a detailed analysis of these results. What does this alignment imply about the robustness of PRH in OOD settings?]}
+
 
 \subsection{Alignment on Random Noise Data}
 \begin{figure}[H]
@@ -93,7 +93,7 @@ We measured alignment using Spearman's rank correlation on mutual k-NN distances
     \label{fig:prh_correlation_random}
 \end{figure}
 
-\textit{[Placeholder: Discuss why PRH breaks down with random noise. Include insights into how this contrasts with the OOD findings and implications for the limits of representational alignment.]}
+
 
 \subsection{Impact of Noise Injection}
 \begin{figure}[H]
@@ -103,7 +103,7 @@ We measured alignment using Spearman's rank correlation on mutual k-NN distances
     \label{fig:alignment_vs_signal_level}
 \end{figure}
 
-\textit{[Placeholder: Provide a mathematical explanation or hypothesis for the quadratic relationship. Discuss any exceptions or unexpected patterns observed.]}
+
 
 \subsection{Alignment Dynamics During LLM Training}
 \begin{figure}[H]
@@ -117,14 +117,14 @@ We measured alignment using Spearman's rank correlation on mutual k-NN distances
     \label{fig:llm_training_alignment}
 \end{figure}
 
-\textit{[Placeholder: Discuss potential reasons for the observed non-linear trends. Do these trends correlate with known phases in model training, such as learning rate schedules or architectural changes?]}
+
 
 \section{Discussion}
 Our results extend the understanding of PRH by demonstrating that while neural networks maintain representational alignment in OOD settings, they struggle with random, unstructured data. This suggests that the shared statistical model proposed by PRH is dependent on the presence of underlying structures in the input data.
 
 The resilience of model alignment to noise, as seen in our noise injection experiment, indicates a form of robustness in how models interpret degraded input. However, the breakdown of alignment with random noise raises questions about the limits of shared representations.
 
-\textit{[Placeholder: Reflect on how these findings challenge or support the philosophical basis of PRH. Include thoughts on how future research could build on these observations.]}
+
 
 \section{Conclusion}
 Our study supports the validity of the Platonic Representation Hypothesis in structured, yet diverse data environments. The findings emphasize the importance of structured data for achieving alignment and suggest further exploration into the dynamics of alignment during model training. Future work could focus on extending PRH to multimodal settings and investigating the impact of training strategies on representational convergence.
