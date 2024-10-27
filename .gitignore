@@ -2,9 +2,10 @@
 data/
 results/
 *.pt
-*.png
-*.jpg
 *egg-info/**
 **__pycache__/**
 *.pyc*
 model_features/*
+noisy_images/*
+noisy_images_steps/*
+places365/*
