@@ -21,50 +21,42 @@ Independent Researcher\\
 \maketitle
 
 \begin{abstract}
-The Platonic Representation Hypothesis (PRH) \cite{huh2024prh} suggests that neural networks, despite being trained on different objectives and datasets, converge toward a shared statistical model of reality. This work extends the investigation of PRH by exploring how neural networks behave when exposed to data that diverges from their training distribution. Using ImageNet-O as a benchmark for out-of-distribution (OOD) data, random noise as a boundary case, and detailed analyses of model alignment dynamics, we aim to uncover the strengths and limitations of PRH. Our results indicate that PRH holds in OOD contexts but encounters challenges with random data, offering a nuanced perspective on representational alignment.
+The Platonic Representation Hypothesis (PRH) \cite{huh2024prh} suggests that neural networks, despite being trained on different objectives, modalities, and datasets, tend to converge toward a shared statistical model of reality. This work investigates the specific conditions required for this phenomenon. Our results indicate that PRH holds even in out-of-distribution (OOD) contexts but faces limitations with random data, offering a nuanced view on representational alignment. Additionally, we examine how training duration and the signal present in data influence convergence toward this shared model.
 \end{abstract}
 
 \section{Introduction}
-Understanding how neural networks form internal representations of the world has been a key area of research, bridging both philosophy and machine learning. The Platonic Representation Hypothesis (PRH) \cite{huh2024prh}, inspired by Plato’s Allegory of the Cave, posits that models across different domains—be it vision or language—are converging towards a shared, idealized model of reality. This hypothesis suggests that, even when trained on different datasets, models internalize similar structures, akin to Plato’s concept of perceiving shadows of the same underlying reality.
+Understanding how neural networks form internal representations of the world is a key research area, bridging philosophy and machine learning. The Platonic Representation Hypothesis (PRH) \cite{huh2024prh}, inspired by Plato’s Allegory of the Cave, proposes that models across domains—such as vision or language—are converging toward a shared, idealized model of reality. According to PRH, even when trained on different datasets, models internalize similar structures, reflecting Plato’s concept of perceiving shadows of an underlying truth.
 
-However, an important question remains: does this convergence persist when models are exposed to data significantly different from their training distributions? In this study, we address this by evaluating the behavior of PRH in various scenarios, including exposure to out-of-distribution (OOD) data and purely random data. Additionally, we explore how models' alignment evolves when progressively corrupted with noise and during different stages of language model training.
-
-
+However, some key questions remain: does this convergence persist when models encounter data significantly different from their training distributions? How does data quality (in terms of signal and information) affect convergence to a shared statistical model? And how does convergence change with varying training progress? This study explores these questions by evaluating PRH under scenarios involving out-of-distribution (OOD) data, purely random data, and progressive noise levels, as well as during different stages of language model training.
 
 \section{Methodology}
-To rigorously evaluate the PRH, we designed a series of experiments that progressively test the hypothesis under varying conditions of data distribution. The methodology is structured around three main experimental setups, each focusing on a distinct aspect of model alignment.
+To evaluate PRH rigorously, we designed experiments that test the hypothesis under varied data distribution conditions. Our methodology centers on three main experimental setups, each focused on a distinct aspect of model alignment.
 
 \subsection{Experimental Setup}
-\textbf{1. Representational Alignment Across Data Types:} We assessed the alignment between different models using the following datasets:
+\textbf{1. Representational Alignment Across Data Types:} We measured alignment between different models across three scenarios: in-distribution, out-of-distribution, and purely random data using the following datasets:
 \begin{enumerate}
-    \item \textbf{In-distribution data}: Places365’s validation set, which closely aligns with the training data of many vision models.
-    \item \textbf{Out-of-distribution data}: The ImageNet-O dataset, specifically curated with images that fall outside the standard ImageNet distribution \cite{hendrycks2021nae}. This allows us to examine whether PRH extends to data with significant divergence.
-    \item \textbf{Random noise}: A dataset of purely random images was used to probe the extreme boundaries of representational alignment. This helps determine if the models converge on a shared interpretation even when presented with unstructured input.
+    \item \textbf{In-distribution data}: The validation set from Places365, which closely aligns with the training data of many vision models. Results for this were adapted directly from the original study \cite{huh2024prh}.
+    \item \textbf{Out-of-distribution data}: The ImageNet-O dataset, containing images that fall outside the standard ImageNet distribution \cite{hendrycks2021nae}. This allows examination of PRH in data with significant divergence.
+    \item \textbf{Random noise}: A dataset of purely random images probes the extreme boundaries of representational alignment. Random noise vectors with matching dimensions to the original dataset were generated, helping assess whether models converge on a shared interpretation in the absence of structured input.
 \end{enumerate}
 
-We measured alignment using Spearman's rank correlation on mutual k-NN distances between model representations, comparing how models interpret the similarity of various input data points.
-
-
+Alignment was measured using Spearman's rank correlation on mutual k-NN distances across model representations, comparing how models interpret the similarity of various data inputs.
 
 \subsection{Noise Injection in Vision Models}
-\textbf{2. Progressive Noise Injection:} To understand the resilience of model alignment to data corruption, we conducted a noise injection experiment:
+\textbf{2. Progressive Noise Injection:} To understand the importance of signal quality or information content for representational alignment, we conducted a noise injection experiment:
 \begin{itemize}
-    \item A set of 250 images was selected and progressively corrupted with Gaussian noise over 100 steps.
-    \item At each noise level, we measured mutual alignment across 17 Vision Transformer models, evaluating how the models' representational structures changed as noise increased.
-    \item The alignment scores were analyzed to reveal potential patterns in how noise impacts convergence, with a particular focus on detecting non-linear relationships.
+    \item A set of 250 images was progressively corrupted with Gaussian noise over 100 steps.
+    \item At each noise level, we measured mutual alignment across 17 Vision Transformer models, evaluating changes in representational structures as noise increased.
+    \item Alignment scores were analyzed to detect non-linear relationships and patterns in how noise impacts convergence.
 \end{itemize}
 
-
-
 \subsection{Tracking Alignment During Language Model Training}
-\textbf{3. Evolution of Alignment During Training:} We also studied how alignment evolves during the training process of language models:
+\textbf{3. Evolution of Alignment During Training:} We also studied how representational alignment evolves during language model training:
 \begin{itemize}
     \item Six large language models (LLMs) were analyzed using checkpoints saved at 100 different training stages.
     \item At each checkpoint, alignment was measured between every pair of models to observe changes in representational similarity over time.
-    \item This analysis aimed to uncover any phases of increased or decreased similarity, providing insights into how models internalize structure during different training stages.
+    \item This analysis aimed to uncover phases of increased or decreased similarity, providing insights into how models internalize structure across training stages.
 \end{itemize}
-
-
 
 \section{Results}
 \subsection{Alignment Across Data Types}
@@ -79,31 +71,41 @@ We measured alignment using Spearman's rank correlation on mutual k-NN distances
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{prh_correlation_ood.jpg}
-    \caption{Alignment of vision models on the ImageNet-O dataset. The Spearman correlation suggests that even with outlier data, models maintain a shared statistical representation, albeit with higher prediction errors.}
+    \caption{Alignment of vision models on the ImageNet-O dataset. Spearman correlation suggests that even with outlier data, models maintain shared statistical representation. Despite prediction errors in this OOD case, models converge in their representations, implying that larger models exhibit predictable error patterns similar to smaller models.}
     \label{fig:prh_correlation_ood}
 \end{figure}
-
-
 
 \subsection{Alignment on Random Noise Data}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{prh_correlation_random.jpg}
-    \caption{Spearman correlation of alignment scores on random noise data. The lower correlation values indicate a breakdown in representational alignment, suggesting that random data lacks the underlying structure needed for PRH.}
+    \caption{Spearman correlation of alignment scores on random noise data. The lower correlation values indicate a breakdown in representational alignment, suggesting that random data lacks the underlying structure required for PRH. This suggests that representational alignment, while present in OOD cases, still depends on some structural properties within the dataset.}
     \label{fig:prh_correlation_random}
 \end{figure}
-
-
 
 \subsection{Impact of Noise Injection}
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{alignment_vs_signal_level.png}
-    \caption{Relationship between noise level and mean alignment scores of 17 ViT models. A quadratic trend is observed as noise increases.}
+    \caption{Relationship between noise level and mean alignment scores of 17 ViT models. A quadratic trend is observed as noise increases. Noise was progressively added to the dataset, with alignment scores calculated at each stage. The results suggest a threshold of signal required for representational alignment to occur. Alignment follows a smooth trend proportional to the square of the signal quantity present in the model.}
     \label{fig:alignment_vs_signal_level}
 \end{figure}
 
+\clearpage
 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{alignment_plot.png}
+    \caption{Alignment of individual ViT models with respect to noise level. This plot provides a detailed view of how each model’s representational alignment responds to incremental noise levels, highlighting both similarities and differences across the 17 models.}
+    \label{fig:alignment_plot}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{legend_models.png}
+    \caption{Legend showing the names of individual ViT models used in the study. Each model is uniquely represented to facilitate distinction in the alignment plots, providing a reference for identifying alignment patterns.}
+    \label{fig:legend_models}
+\end{figure}
 
 \subsection{Alignment Dynamics During LLM Training}
 \begin{figure}[H]
@@ -113,24 +115,18 @@ We measured alignment using Spearman's rank correlation on mutual k-NN distances
     \includegraphics[width=0.48\textwidth]{mean_alignment_score_410m.png}
     \includegraphics[width=0.48\textwidth]{mean_alignment_score_1b.png}
     \includegraphics[width=0.48\textwidth]{mean_alignment_score_1.4b.png}
-    \caption{Alignment trends of LLMs during training. Alignment scores reveal non-linear trends across different parameter sizes.}
+    \caption{Alignment trends of LLMs during training. Scores show non-linear trends across different parameter sizes, with initial similarity between smaller and larger models due to similar initialization methods, followed by divergence as larger models form more detailed representations.}
     \label{fig:llm_training_alignment}
 \end{figure}
 
-
-
 \section{Discussion}
-Our results extend the understanding of PRH by demonstrating that while neural networks maintain representational alignment in OOD settings, they struggle with random, unstructured data. This suggests that the shared statistical model proposed by PRH is dependent on the presence of underlying structures in the input data.
-
-The resilience of model alignment to noise, as seen in our noise injection experiment, indicates a form of robustness in how models interpret degraded input. However, the breakdown of alignment with random noise raises questions about the limits of shared representations.
-
-
+Our results extend understanding of PRH by showing that neural networks maintain representational alignment in OOD contexts but struggle with random data, indicating that shared statistical models depend on structured input. Noise resilience in our experiments highlights models' robustness in interpreting degraded input, though random noise shows the limits of shared representations. Both signal quality and model pretraining show smooth transitions in representational alignment, suggesting a gradual, rather than abrupt, convergence.
 
 \section{Conclusion}
-Our study supports the validity of the Platonic Representation Hypothesis in structured, yet diverse data environments. The findings emphasize the importance of structured data for achieving alignment and suggest further exploration into the dynamics of alignment during model training. Future work could focus on extending PRH to multimodal settings and investigating the impact of training strategies on representational convergence.
+Our study supports the validity of the Platonic Representation Hypothesis in structured, diverse data environments. Findings highlight the importance of data structure in alignment, suggesting further exploration of PRH in multimodal settings and the effects of training strategies on representational convergence.
 
 \vfill
-The code used for the experiments and analysis in this paper is available on GitHub \href{https://github.com/rokosbasilisk/prh-experiments}{here}.
+The code for experiments and analysis in this paper is available on GitHub \href{https://github.com/rokosbasilisk/prh-experiments}{here}.
 
 \clearpage
 \begin{thebibliography}{9}

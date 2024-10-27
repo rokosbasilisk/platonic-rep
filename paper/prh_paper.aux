@@ -18,6 +18,7 @@
 \providecommand\HyField@AuxAddToCoFields[2]{}
 \citation{huh2024prh}
 \citation{huh2024prh}
+\citation{huh2024prh}
 \citation{hendrycks2021nae}
 \@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
 \@writefile{toc}{\contentsline {section}{\numberline {2}Methodology}{1}{section.2}\protected@file@percent }
@@ -30,18 +31,8 @@
 \providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
 \newlabel{fig:prh_correlation}{{1}{3}{Spearman rank correlation between models on Places365's validation data, indicating a high degree of alignment in in-distribution data.\relax }{figure.caption.1}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Alignment on ImageNet-O Data}{4}{subsection.3.2}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Alignment of vision models on the ImageNet-O dataset. The Spearman correlation suggests that even with outlier data, models maintain a shared statistical representation, albeit with higher prediction errors.\relax }}{4}{figure.caption.2}\protected@file@percent }
-\newlabel{fig:prh_correlation_ood}{{2}{4}{Alignment of vision models on the ImageNet-O dataset. The Spearman correlation suggests that even with outlier data, models maintain a shared statistical representation, albeit with higher prediction errors.\relax }{figure.caption.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Alignment of vision models on the ImageNet-O dataset. Spearman correlation suggests that even with outlier data, models maintain shared statistical representation. Despite prediction errors in this OOD case, models converge in their representations, implying that larger models exhibit predictable error patterns similar to smaller models.\relax }}{4}{figure.caption.2}\protected@file@percent }
+\newlabel{fig:prh_correlation_ood}{{2}{4}{Alignment of vision models on the ImageNet-O dataset. Spearman correlation suggests that even with outlier data, models maintain shared statistical representation. Despite prediction errors in this OOD case, models converge in their representations, implying that larger models exhibit predictable error patterns similar to smaller models.\relax }{figure.caption.2}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Alignment on Random Noise Data}{5}{subsection.3.3}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Spearman correlation of alignment scores on random noise data. The lower correlation values indicate a breakdown in representational alignment, suggesting that random data lacks the underlying structure needed for PRH.\relax }}{5}{figure.caption.3}\protected@file@percent }
-\newlabel{fig:prh_correlation_random}{{3}{5}{Spearman correlation of alignment scores on random noise data. The lower correlation values indicate a breakdown in representational alignment, suggesting that random data lacks the underlying structure needed for PRH.\relax }{figure.caption.3}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Impact of Noise Injection}{6}{subsection.3.4}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Relationship between noise level and mean alignment scores of 17 ViT models. A quadratic trend is observed as noise increases.\relax }}{6}{figure.caption.4}\protected@file@percent }
-\newlabel{fig:alignment_vs_signal_level}{{4}{6}{Relationship between noise level and mean alignment scores of 17 ViT models. A quadratic trend is observed as noise increases.\relax }{figure.caption.4}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Alignment Dynamics During LLM Training}{7}{subsection.3.5}\protected@file@percent }
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Alignment trends of LLMs during training. Alignment scores reveal non-linear trends across different parameter sizes.\relax }}{7}{figure.caption.5}\protected@file@percent }
-\newlabel{fig:llm_training_alignment}{{5}{7}{Alignment trends of LLMs during training. Alignment scores reveal non-linear trends across different parameter sizes.\relax }{figure.caption.5}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{7}{section.4}\protected@file@percent }
-\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{7}{section.5}\protected@file@percent }
-\bibcite{huh2024prh}{1}
-\bibcite{hendrycks2021nae}{2}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Spearman correlation of alignment scores on random noise data. The lower correlation values indicate a breakdown in representational alignment, suggesting that random data lacks the underlying structure required for PRH. This suggests that representational alignment, while present in OOD cases, still depends on some structural properties within the dataset.\relax }}{5}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:prh_correlation_random}{{3}{5}{Spearman correlation of alignment scores on random noise data. The lower correlation values indicate a breakdown in representational alignment, suggesting that random data lacks the underlying structure required for PRH. This suggests that representational al
