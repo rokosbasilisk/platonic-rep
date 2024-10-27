@@ -4,7 +4,7 @@
 \usepackage{amsmath}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage[colorlinks=true, linkcolor=blue, urlcolor=blue, citecolor=blue]{hyperref}
 \usepackage{float}
 \usepackage{subcaption}
 \usepackage{geometry}
@@ -27,7 +27,7 @@ The Platonic Representation Hypothesis (PRH) \cite{huh2024prh} suggests that neu
 \section{Introduction}
 Understanding how neural networks form internal representations of the world is a key research area, bridging philosophy and machine learning. The Platonic Representation Hypothesis (PRH) \cite{huh2024prh}, inspired by Plato’s Allegory of the Cave, proposes that models across domains—such as vision or language—are converging toward a shared, idealized model of reality. According to PRH, even when trained on different datasets, models internalize similar structures, reflecting Plato’s concept of perceiving shadows of an underlying truth.
 
-However, some key questions remain: does this convergence persist when models encounter data significantly different from their training distributions? How does data quality (in terms of signal and information) affect convergence to a shared statistical model? And how does convergence change with varying training progress? This study explores these questions by evaluating PRH under scenarios involving out-of-distribution (OOD) data, purely random data, and progressive noise levels, as well as during different stages of language model training.
+However, some key questions remain: Does this convergence persist when models encounter data significantly different from their training distributions? How does data quality (in terms of signal and information) affect convergence to a shared statistical model? And how does convergence change with varying training progress? This study explores these questions by evaluating PRH under scenarios involving out-of-distribution (OOD) data, purely random data, and progressive noise levels, as well as during different stages of language model training.
 
 \section{Methodology}
 To evaluate PRH rigorously, we designed experiments that test the hypothesis under varied data distribution conditions. Our methodology centers on three main experimental setups, each focused on a distinct aspect of model alignment.
@@ -102,7 +102,7 @@ Alignment was measured using Spearman's rank correlation on mutual k-NN distance
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{legend_models.png}
+    \includegraphics[width=0.6\textwidth, keepaspectratio]{legend_models.png}
     \caption{Legend showing the names of individual ViT models used in the study. Each model is uniquely represented to facilitate distinction in the alignment plots, providing a reference for identifying alignment patterns.}
     \label{fig:legend_models}
 \end{figure}
@@ -115,7 +115,7 @@ Alignment was measured using Spearman's rank correlation on mutual k-NN distance
     \includegraphics[width=0.48\textwidth]{mean_alignment_score_410m.png}
     \includegraphics[width=0.48\textwidth]{mean_alignment_score_1b.png}
     \includegraphics[width=0.48\textwidth]{mean_alignment_score_1.4b.png}
-    \caption{Alignment trends of LLMs during training. Scores show non-linear trends across different parameter sizes, with initial similarity between smaller and larger models due to similar initialization methods, followed by divergence as larger models form more detailed representations.}
+    \caption{Alignment trends of LLMs during training. Scores show non-linear trends across different parameter sizes, with initial similarity between smaller and larger models due to similar initialization methods, followed by divergence as larger models form more detailed representations. For each model in the plot, the mean alignment score with respect to all the other five models is calculated and plotted over the training process}
     \label{fig:llm_training_alignment}
 \end{figure}
 
@@ -128,7 +128,7 @@ Our study supports the validity of the Platonic Representation Hypothesis in str
 \vfill
 The code for experiments and analysis in this paper is available on GitHub \href{https://github.com/rokosbasilisk/prh-experiments}{here}.
 
-\clearpage
+
 \begin{thebibliography}{9}
 
 \bibitem{huh2024prh}
