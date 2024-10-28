@@ -87,7 +87,7 @@ Alignment was measured using Spearman's rank correlation on mutual k-NN distance
 \begin{figure}[H]
     \centering
     \includegraphics[width=\textwidth]{alignment_vs_signal_level.png}
-    \caption{Relationship between noise level and mean alignment scores of 17 ViT models. A quadratic trend is observed as noise increases. Noise was progressively added to the dataset, with alignment scores calculated at each stage. The results suggest a threshold of signal required for representational alignment to occur. Alignment follows a smooth trend proportional to the square of the signal quantity present in the model.}
+    \caption{Relationship between noise level and mean alignment scores of 17 ViT models \cite{dosovitskiy2020vit} \cite{MaskedAutoencoders2021}. A quadratic trend is observed as noise increases. Noise was progressively added to the dataset, with alignment scores calculated at each stage. The results suggest a threshold of signal required for representational alignment to occur. Alignment follows a smooth trend proportional to the square of the signal quantity present in the model.}
     \label{fig:alignment_vs_signal_level}
 \end{figure}
 
@@ -115,7 +115,7 @@ Alignment was measured using Spearman's rank correlation on mutual k-NN distance
     \includegraphics[width=0.48\textwidth]{mean_alignment_score_410m.png}
     \includegraphics[width=0.48\textwidth]{mean_alignment_score_1b.png}
     \includegraphics[width=0.48\textwidth]{mean_alignment_score_1.4b.png}
-    \caption{Alignment trends of LLMs during training. Scores show non-linear trends across different parameter sizes, with initial similarity between smaller and larger models due to similar initialization methods, followed by divergence as larger models form more detailed representations. For each model in the plot, the mean alignment score with respect to all the other five models is calculated and plotted over the training process}
+    \caption{Alignment trends of LLMs during training. Scores show non-linear trends across different parameter sizes, with initial similarity between smaller and larger models due to similar initialization methods, followed by divergence as larger models form more detailed representations. For each model in the plot, the mean alignment score with respect to all the other five models is calculated and plotted over the training process. For this experiment we have chosen Pythia model's \cite{biderman2023pythia} checkpoints with model parameters range  14m, 160m, 410mn, 1B,1.4B }
     \label{fig:llm_training_alignment}
 \end{figure}
 
@@ -128,7 +128,6 @@ Our study supports the validity of the Platonic Representation Hypothesis in str
 \vfill
 The code for experiments and analysis in this paper is available on GitHub \href{https://github.com/rokosbasilisk/prh-experiments}{here}.
 
-
 \begin{thebibliography}{9}
 
 \bibitem{huh2024prh}
@@ -136,6 +135,15 @@ Huh, M., Cheung, B., Wang, T., \& Isola, P. (2024). The Platonic Representation 
 
 \bibitem{hendrycks2021nae}
 Hendrycks, D., Zhao, K., Basart, S., Steinhardt, J., \& Song, D. (2021). Natural Adversarial Examples. \emph{CVPR}. \href{https://arxiv.org/abs/2405.07987}{arXiv:2405.07987}.
+
+\bibitem{biderman2023pythia} 
+Biderman, S., Schoelkopf, H., Anthony, Q. G., Bradley, H., O'Brien, K., Hallahan, E., Khan, M. A., Purohit, S., Prashanth, U. S., Raff, E., et al. (2023). Pythia: A suite for analyzing large language models across training and scaling. *International Conference on Machine Learning*.
+
+\bibitem{MaskedAutoencoders2021} 
+He, K., Chen, X., Xie, S., Li, Y., Doll{\'a}r, P., \& Girshick, R. (2021). Masked Autoencoders Are Scalable Vision Learners. *arXiv:2111.06377*.
+
+\bibitem{dosovitskiy2020vit} 
+Dosovitskiy, A., Beyer, L., Kolesnikov, A., Weissenborn, D., Zhai, X., Unterthiner, T., Dehghani, M., Minderer, M., Heigold, G., Gelly, S., Uszkoreit, J., \& Houlsby, N. (2021). An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale. *ICLR*.
 
 \end{thebibliography}
 
